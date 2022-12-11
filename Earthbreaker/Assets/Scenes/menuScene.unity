@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 1108869574}
   - component: {fileID: 1108869573}
   - component: {fileID: 1108869572}
-  - component: {fileID: 1108869571}
+  - component: {fileID: 1108869575}
   m_Layer: 5
   m_Name: crafting button
   m_TagString: Untagged
@@ -352,18 +352,6 @@ RectTransform:
   m_AnchoredPosition: {x: -793.98, y: 0.0020223}
   m_SizeDelta: {x: 332.0458, y: 289.22}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1108869571
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1108869569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ab98e26bce10aa46a22fa2f558fe6ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1108869572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -408,8 +396,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1108869571}
-        m_TargetAssemblyTypeName: navigationScript, Assembly-CSharp
+      - m_Target: {fileID: 1108869575}
+        m_TargetAssemblyTypeName: navigation, Assembly-CSharp
         m_MethodName: switchScene
         m_Mode: 5
         m_Arguments:
@@ -458,6 +446,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108869569}
   m_CullTransparentMesh: 1
+--- !u!114 &1108869575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108869569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab98e26bce10aa46a22fa2f558fe6ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1382378929
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 1731515876}
   - component: {fileID: 1731515875}
   - component: {fileID: 1731515874}
-  - component: {fileID: 1731515873}
+  - component: {fileID: 1731515877}
   m_Layer: 5
   m_Name: quit button
   m_TagString: Untagged
@@ -633,18 +633,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000011444, y: -385}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1731515873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1731515871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39e6d2afb4d823544823409c041ab5de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1731515874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,9 +677,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1731515873}
-        m_TargetAssemblyTypeName: quitGameScript, Assembly-CSharp
-        m_MethodName: quitGame
+      - m_Target: {fileID: 1731515877}
+        m_TargetAssemblyTypeName: quitGame, Assembly-CSharp
+        m_MethodName: exitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -739,6 +727,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1731515871}
   m_CullTransparentMesh: 1
+--- !u!114 &1731515877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731515871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39e6d2afb4d823544823409c041ab5de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1739621324
 GameObject:
   m_ObjectHideFlags: 0
