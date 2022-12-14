@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     public long maxHealth = 10;
     public long currentHealth;
     public long defense = 0;
+    // long demoDamage = 3;
     
 
     public healthBar healthBar;
@@ -17,7 +18,9 @@ public class Enemy : MonoBehaviour
     }
 
     void Update(){
-        
+        // if(Input.GetKeyDown(KeyCode.Space)){
+        //     takeDamage(demoDamage);
+        // }
     }
 
     public void takeDamage(long attack) {
