@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public GameObject damagePopup;
+    private Vector3 vector = new Vector3(812, 401, 0);
     public long maxHealth = 10;
     public long currentHealth;
     public long defense = 0;
-    // long demoDamage = 3;
     
-
     public healthBar healthBar;
 
     void Start(){
@@ -18,16 +18,18 @@ public class Enemy : MonoBehaviour
     }
 
     void Update(){
-        // if(Input.GetKeyDown(KeyCode.Space)){
-        //     takeDamage(demoDamage);
-        // }
+
     }
 
     public void takeDamage(long attack) {
-        if (attack - defense <= 0) {
+        long damage = attack - defense;
+
+        if (damage <= 0) {
 
         } else {
-            currentHealth -= (attack - defense);
+            currentHealth -= (damage);
+            GameObject textPopup = Instantiate(damagePopup, vector, Quaternion.identity) as GameObject;
+            textPopup.transform.GetChild(0).GetComponent<TextMesh>().text = damage.ToString();
             healthBar.setHealth(currentHealth);
         }
     }

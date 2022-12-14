@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Foreground
-  - 
+  - Damage
   - 
   - 
   - 
@@ -49,4 +49,7 @@ TagManager:
     locked: 0
   - name: Foreground
     uniqueID: 2158855999
+    locked: 0
+  - name: Damage
+    uniqueID: 2158687513
     locked: 0
