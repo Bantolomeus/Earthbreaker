@@ -8,7 +8,6 @@ public class JsonSaving : MonoBehaviour
     public Hero hero;
 
     private PlayerData playerData;
-    private string path;
     private string persistentPath;
 
     public void saveData(){
@@ -34,7 +33,6 @@ public class JsonSaving : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   
-        // path = Application.dataPath + Path.AltDirectorySeparatorChar + "PlayerDataSaveFile.json";
         persistentPath = Application.persistentDataPath + Path.AltDirectorySeparatorChar + "PlayerDataSaveFile.json";
     }
 
