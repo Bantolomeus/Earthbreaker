@@ -6,4 +6,5 @@ Try and error game development
 - Wir verwenden nur Major und Minor Versions
 
 - save the game with keystroke S
+- if you have no save file, simply go to the combat screen and press S on your keyboard
 - on combat scene start the savefile for the combat will load
