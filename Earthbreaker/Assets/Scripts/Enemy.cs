@@ -25,12 +25,16 @@ public class Enemy : MonoBehaviour
         long damage = attack - defense;
 
         if (damage <= 0) {
-
-        } else {
-            currentHealth -= (damage);
             GameObject textPopup = Instantiate(damagePopup, vector, Quaternion.identity) as GameObject;
-            textPopup.transform.GetChild(0).GetComponent<TextMesh>().text = damage.ToString();
-            healthBar.setHealth(currentHealth);
+            textPopup.transform.GetChild(0).GetComponent<TextMesh>().text = "0";
+        } else {
+            if (currentHealth > 0){
+                GameObject textPopup = Instantiate(damagePopup, vector, Quaternion.identity) as GameObject;
+                textPopup.transform.GetChild(0).GetComponent<TextMesh>().text = damage.ToString();
+                currentHealth -= (damage);
+                healthBar.setHealth(currentHealth);
+            }
+            
         }
     }
 }
