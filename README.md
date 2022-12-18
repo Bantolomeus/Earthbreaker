@@ -10,4 +10,4 @@ Try and error game development
 - on combat scene start the savefile for the combat will load
 
 credits:
-<a href='https://pngtree.com/so/classic'>classic png from pngtree.com/</a>
+- <a href='https://pngtree.com/so/classic'>classic png from pngtree.com/</a>
