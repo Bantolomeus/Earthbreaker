@@ -8,6 +8,3 @@ Try and error game development
 - save the game with keystroke S
 - if you have no save file, simply go to the combat screen and press S on your keyboard
 - on combat scene start the savefile for the combat will load
-
-credits:
-- <a href='https://pngtree.com/so/classic'>classic png from pngtree.com/</a>
